@@ -1,0 +1,40 @@
+/* Colors */
+
+$main-gray: #545453;
+$main-gray-hvr: #adada4;
+$main-black: #000;
+$main-white: #fff;
+$main-green: #67F891;
+$main-green-hvr: #bdf9ce;
+$main-blue: #5CE1E6;
+$main-blue-hvr: #62f2f7;
+
+
+/*Components colors*/
+
+
+/* Fonts Size */
+
+$text-fsize: 14px;
+$page-header-fsize: 16px;
+$section-header-fsize: 16px;
+$lg-link-fsize: 16px;
+$sm-link-fsize: 13px;
+$btn-fsize: 18px;
+$logo-fsize: 36px;
+
+/* Fonts */
+
+$font-roboto: 'Roboto',
+sans-serif;
+// <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+$font-caveat: 'Caveat',
+cursive;
+// @import url('https://fonts.googleapis.com/css?family=Caveat');
+
+/* Font Weight */
+
+$light-font: 300;
+$normal-font: 400;
+$average-font: 500;
+$heavy-font: 700;

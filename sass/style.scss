@@ -3,15 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 
 @import "variables";
+@import "layout";
 @import "mixins";
 
-@import "normalize.scss";
+@import "normalize";
 
 /* Components */
-
+@import "components/navigation";
 
 /* Sections */
-
+@import "sections/header";
 
 /* Pages / Views */
 // import "pages/registration";

@@ -8,7 +8,7 @@
 /* Font Weight */
 * { box-sizing: border-box; }
 
-.container { width: 100%; margin: 0 auto; }
+.container { width: 100%; height: 100vh; text-align: center; margin: 0 auto; }
 
 .container-fluid { width: 100%; }
 
@@ -178,23 +178,27 @@ template { display: none; }
 [hidden] { display: none; }
 
 /* Components */
-.navigation { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; width: 100%; position: fixed; top: 0; background-color: #fff; }
+.navigation { display: -ms-flexbox; display: flex; width: 100%; position: fixed; top: 0; background-color: #fff; }
 
-.navigation .logo { display: -ms-flexbox; display: flex; }
+.navigation .row .logo { display: -ms-flexbox; display: flex; }
 
-.navigation .logo .logo_photo { width: 200px; height: 70px; }
+.navigation .row .logo .logo_photo { width: 200px; height: 70px; }
 
-.navigation .nav-bar { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; list-style-type: none; }
+.navigation .row .nav-bar { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; list-style-type: none; }
 
-.navigation .nav-bar .nav-item { margin: 0 30px 0 30px; }
+.navigation .row .nav-bar .nav-item { margin: 0 30px 0 30px; }
 
-.navigation .nav-bar .nav-item .nav-link { color: #545453; font-weight: 700; text-decoration: none; }
+.navigation .row .nav-bar .nav-item:hover { padding: auto auto; background-color: #e2e2d5; }
 
-.navigation .nav-bar .nav-item .nav-link:hover { cursor: pointer; text-transform: uppercase; margin: 0; }
+.navigation .row .nav-bar .nav-item .nav-link { color: #545453; font-weight: 700; text-decoration: none; }
+
+.navigation .row .nav-bar .nav-item .nav-link:hover { cursor: pointer; }
 
 /* Sections */
-header { background-color: #000; height: 100vh; width: 100%; color: #adada4; padding: 10% 40%; text-align: center; }
+header { background-color: #000; width: 100%; color: #adada4; padding: 10% 40%; }
 
 header .welcome_photo { width: 200px; height: 250px; background-repeat: no-repeat; background-color: #fff; border-radius: 50%; }
+
+.me { padding-top: 70px; }
 
 /* Pages / Views */

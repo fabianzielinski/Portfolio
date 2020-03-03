@@ -1,0 +1,22 @@
+.portfolio {
+    padding-top: 100px;
+
+    .project {
+        @include size(400px, 400px);
+        padding: 20px;
+
+        .project_link {
+            &:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+
+            .project_img {
+                @include size(350px, 350px);
+            }
+        }
+
+        .project_content {
+            background-color: $main-gray-lgh;
+        }
+    }
+}

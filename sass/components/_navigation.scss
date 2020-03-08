@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     background-color: $main-white;
+    z-index: 2;
 
     .row {
         display: flex;

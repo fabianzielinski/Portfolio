@@ -182,7 +182,7 @@ template { display: none; }
 [hidden] { display: none; }
 
 /* Components */
-.navigation { width: 100%; position: fixed; top: 0; background-color: #fff; }
+.navigation { width: 100%; position: fixed; top: 0; background-color: #fff; z-index: 2; }
 
 .navigation .row { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: end; }
 
@@ -199,21 +199,37 @@ template { display: none; }
 .navigation .row .nav-bar .nav-item .nav-link:hover { cursor: pointer; }
 
 /* Sections */
-header { background-color: #000; width: 100%; color: #adada4; padding: 10% 40%; }
+header { background-color: #000; width: 100%; color: #67F891; padding: 10% 40%; }
 
-header .welcome_photo { width: 200px; height: 250px; background-repeat: no-repeat; background-color: #fff; border-radius: 50%; }
+header .welcome_photo { width: 200px; height: 250px; background-repeat: no-repeat; background-color: #fff; border-radius: 50%; border: solid 8px #5CE1E6; }
 
 .me { padding-top: 70px; }
 
 .portfolio { padding-top: 100px; }
 
-.portfolio .project { width: 400px; height: 400px; padding: 20px; }
+.portfolio .project { width: 400px; height: 400px; padding: 20px; position: relative; }
 
-.portfolio .project:hover { transform: translate(0, 0) scale(2.2, 2.2); position: fixed; top: 35vh; left: 35vw; }
+.portfolio .project:hover { transform: translate(0, 0) scale(2.2, 2.2); position: fixed; top: 50vh; left: 35vw; z-index: 1; border: solid 1px #545453; }
 
-.portfolio .project .project_link:hover { box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
+.portfolio .project:hover img { border: solid 1px #e2e2d5; }
 
-.portfolio .project .project_link .project_img { width: 350px; height: 200px; }
+.portfolio .project:hover a { opacity: 1; }
+
+.portfolio .project:hover .project_content { opacity: 0; }
+
+.portfolio .project .project_img { width: 350px; height: 200px; }
+
+.portfolio .project a { position: absolute; top: 45%; opacity: 0; }
+
+.portfolio .project a .project_button { margin: 10px; color: #000; border-radius: 10px; cursor: pointer; }
+
+.portfolio .project .project_link_demo { left: 25%; }
+
+.portfolio .project .project_link_github { left: 55%; }
+
+.portfolio .project .demo { background-color: #67F891; }
+
+.portfolio .project .github { background-color: #5CE1E6; }
 
 .portfolio .project .project_content { background-color: #e2e2d5; }
 

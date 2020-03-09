@@ -1,0 +1,9 @@
+.contact {
+    padding-top: 20%;
+
+    i {
+        @include size(60px, 80px);
+        margin: 5px;
+        color: $main-black;
+    }
+}

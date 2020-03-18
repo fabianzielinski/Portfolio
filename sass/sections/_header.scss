@@ -3,6 +3,7 @@ header {
     width: 100%;
     color: $main-green;
     padding: 10% 40%;
+    @include section;
 
     .welcome_photo {
         @include size(200px, 250px);
@@ -10,5 +11,15 @@ header {
         background-color: $main-white;
         border-radius: 50%;
         border: solid 8px $main-blue;
+    }
+
+    .decoration {
+        &_hex-top-left {
+            @include hex-top-left;
+        }
+
+        &_hex-top-right {
+            @include hex-bottom-right;
+        }
     }
 }

@@ -198,10 +198,24 @@ template { display: none; }
 
 .navigation .row .nav-bar .nav-item .nav-link:hover { cursor: pointer; }
 
+footer { background-color: #545453; color: #fff; }
+
+footer .footer_container { height: auto; padding: 5px; }
+
+footer .footer_container a { color: #fff; }
+
 /* Sections */
-header { background-color: #000; width: 100%; color: #67F891; padding: 10% 40%; }
+header { background-color: #000; width: 100%; color: #67F891; padding: 10% 40%; position: relative; margin: 0 auto; }
 
 header .welcome_photo { width: 200px; height: 250px; background-repeat: no-repeat; background-color: #fff; border-radius: 50%; border: solid 8px #5CE1E6; }
+
+header .decoration_hex-top-left { display: none; }
+
+@media (min-width: 992px) { header .decoration_hex-top-left { display: inline-block; position: absolute; width: 16%; left: 0; top: -25px; } }
+
+header .decoration_hex-top-right { display: none; }
+
+@media (min-width: 992px) { header .decoration_hex-top-right { display: inline-block; position: absolute; width: 16%; right: -2%; top: 145px; transform: rotate(180deg); } }
 
 .me { padding-top: 70px; }
 
@@ -245,6 +259,10 @@ header .welcome_photo { width: 200px; height: 250px; background-repeat: no-repea
 
 .contact .content_page .contact_row .contact_link .contact_ico { font-size: 50px; }
 
+.contact .content_page .contact_row .contact_link .contact_ico:hover { color: #67F891; }
+
 .contact .content_page .contact_row .contact_link .contact_name { font-size: 18px; }
+
+.contact .content_page .contact_row .contact_link .contact_name:hover { color: #5CE1E6; }
 
 /* Pages / Views */

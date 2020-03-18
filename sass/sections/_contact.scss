@@ -24,10 +24,18 @@
 
                 .contact_ico {
                     font-size: 50px;
+
+                    &:hover {
+                        color: $main-green;
+                    }
                 }
 
                 .contact_name {
                     font-size: 18px;
+
+                    &:hover {
+                        color: $main-blue;
+                    }
                 }
             }
         }

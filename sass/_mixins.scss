@@ -1,4 +1,59 @@
+// media query
+@mixin mobile-large {
+	@media (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin tablet-small {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin tablet-large {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
 @mixin size($width, $height) {
 	width: $width;
 	height: $height;
+}
+
+@mixin section {
+	position: relative;
+	margin: 0 auto;
+}
+
+@mixin hex-top-left {
+	display: none;
+
+	@include tablet-large {
+		display: inline-block;
+		position: absolute;
+		width: 16%;
+		left: 0;
+		top: -25px;
+	}
+}
+
+@mixin hex-bottom-right {
+	display: none;
+
+	@include tablet-large {
+		display: inline-block;
+		position: absolute;
+		width: 16%;
+		right: -2%;
+		top: 145px;
+		transform: rotate(180deg);
+	}
 }

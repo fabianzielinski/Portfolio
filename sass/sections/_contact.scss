@@ -9,6 +9,21 @@
         box-shadow: 10px 10px 5px $main-gray-hvr;
         margin: 0 5% 5% 5%;
         padding: 2% 0;
+        background-color: $main-gray;
+        color: $main-gray-lgh;
+        @include section;
+
+        .contact_hex-center {
+            @include hex-center;
+        }
+
+        .contact_hex-top-right {
+            @include hex-top-right;
+        }
+
+        .contact_hex-mid-right {
+            @include hex-mid-right;
+        }
 
         .contact_title {
             padding-top: 50px;
@@ -19,7 +34,7 @@
             padding-top: 50px;
 
             .contact_link {
-                color: $main-gray;
+                color: $main-gray-lgh;
                 height: 100%;
 
                 .contact_ico {

@@ -5,6 +5,34 @@ header {
     padding: 10% 40%;
     @include section;
 
+    .decoration_hex-top-left {
+        @include hex-top-left;
+    }
+
+    .decoration_hex-top-right {
+        @include hex-top-right;
+    }
+
+    .decoration_hex-mid-left {
+        @include hex-mid-left;
+    }
+
+    .decoration_hex-mid-right {
+        @include hex-mid-right;
+    }
+
+    .decoration_hex-center {
+        @include hex-center;
+    }
+
+    .decoration_hex-bottom-right {
+        @include hex-bottom-right;
+    }
+
+    .decoration_hex-bottom-left {
+        @include hex-bottom-left;
+    }
+
     .welcome_photo {
         @include size(200px, 250px);
         background-repeat: no-repeat;
@@ -13,13 +41,4 @@ header {
         border: solid 8px $main-blue;
     }
 
-    .decoration {
-        &_hex-top-left {
-            @include hex-top-left;
-        }
-
-        &_hex-top-right {
-            @include hex-bottom-right;
-        }
-    }
 }

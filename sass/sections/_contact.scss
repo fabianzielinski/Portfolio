@@ -21,8 +21,20 @@
             @include hex-top-right;
         }
 
+        .contact_hex-top-left {
+            @include hex-top-left;
+        }
+
         .contact_hex-mid-right {
             @include hex-mid-right;
+        }
+
+        .contact_hex-mid-top {
+            @include hex-mid-top;
+        }
+
+        .contact_hex-mid-bottom {
+            @include hex-mid-bottom;
         }
 
         .contact_title {
@@ -36,6 +48,7 @@
             .contact_link {
                 color: $main-gray-lgh;
                 height: 100%;
+                z-index: 2;
 
                 .contact_ico {
                     font-size: 50px;

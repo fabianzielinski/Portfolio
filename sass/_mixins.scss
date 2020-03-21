@@ -90,6 +90,28 @@
 	}
 }
 
+@mixin hex-mid-top {
+	display: none;
+
+	@include tablet-large {
+		display: inline-block;
+		position: absolute;
+		right: 30%;
+		top: 25%;
+	}
+}
+
+@mixin hex-mid-bottom {
+	display: none;
+
+	@include tablet-large {
+		display: inline-block;
+		position: absolute;
+		right: 30%;
+		top: 70%;
+	}
+}
+
 @mixin hex-bottom-right {
 	display: none;
 

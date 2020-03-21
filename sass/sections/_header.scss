@@ -5,6 +5,10 @@ header {
     padding: 10% 40%;
     @include section;
 
+    .hex {
+        z-index: 0;
+    }
+
     .decoration_hex-top-left {
         @include hex-top-left;
     }
@@ -23,6 +27,14 @@ header {
 
     .decoration_hex-center {
         @include hex-center;
+    }
+
+    .decoration_hex-mid-top {
+        @include hex-mid-top;
+    }
+
+    .decoration_hex-mid-bottom {
+        @include hex-mid-bottom;
     }
 
     .decoration_hex-bottom-right {

@@ -1,0 +1,69 @@
+.portfolio {
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+
+    .project {
+        @include size(400px, 400px);
+        padding: 20px;
+        position: relative;
+
+        &:hover {
+            transform: translate(0, 0) scale(2.2, 2.2);
+            position: fixed;
+            top: 50vh;
+            left: 35vw;
+            z-index: 1;
+            border: solid 1px $main-gray;
+
+            img {
+                border: solid 1px $main-gray-lgh;
+            }
+
+            a {
+                opacity: 1;
+            }
+
+            .project_content {
+                opacity: 0;
+            }
+        }
+
+        .project_img {
+            @include size(350px, 200px);
+        }
+
+        a {
+            position: absolute;
+            top: 45%;
+            opacity: 0;
+
+            .project_button {
+                margin: 10px;
+                color: $main-black;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .project_link_demo {
+            left: 25%;
+        }
+
+        .project_link_github {
+            left: 55%;
+        }
+
+        .demo {
+            background-color: $main-green;
+        }
+
+        .github {
+            background-color: $main-blue;
+        }
+
+        .project_content {
+            background-color: $main-gray-lgh;
+        }
+    }
+}

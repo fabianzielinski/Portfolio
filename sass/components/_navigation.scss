@@ -1,0 +1,46 @@
+.navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $main-white;
+    z-index: 2;
+
+    .row {
+        display: flex;
+        justify-content: end;
+
+        .logo {
+
+            .logo_photo {
+                @include size(200px, 70px);
+            }
+        }
+
+        .nav-bar {
+            display: flex;
+            list-style-type: none;
+            padding: 1.5% 0 0 30%;
+            width: 100%;
+
+            .nav-item {
+                margin: 0 30px 0 30px;
+
+                &:hover {
+                    padding: auto auto;
+                    background-color: $main-gray-lgh;
+                }
+
+                .nav-link {
+                    color: $main-gray;
+                    font-weight: $heavy-font;
+                    text-decoration: none;
+
+                    &:hover {
+                        cursor: pointer;
+
+                    }
+                }
+            }
+        }
+    }
+}

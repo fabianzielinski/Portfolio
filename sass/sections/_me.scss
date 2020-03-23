@@ -1,0 +1,15 @@
+.me {
+    padding-top: 70px;
+    background-color: $main-gray-lgh;
+
+    .row {
+        .me_title {
+            text-transform: uppercase;
+            font-weight: $heavy-font;
+        }
+
+        .me_text {
+            margin: 30px;
+        }
+    }
+}

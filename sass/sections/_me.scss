@@ -4,6 +4,14 @@
     max-width: 100%;
     height: auto;
 
+    .row {
+        .me_title {
+            text-transform: uppercase;
+            font-weight: $heavy-font;
+            font-size: 22px;
+        }
+    }
+
     .me_technology {
         padding: 3%;
         margin: 4%;
@@ -17,6 +25,7 @@
             .me_title {
                 text-transform: uppercase;
                 font-weight: $heavy-font;
+                font-size: 42px;
             }
 
             .me_text {

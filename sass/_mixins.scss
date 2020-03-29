@@ -23,6 +23,19 @@
 	}
 }
 
+@mixin max-mobile-large {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
+
+@mixin max-tablet-small {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+
 @mixin size($width, $height) {
 	width: $width;
 	height: $height;
@@ -39,7 +52,6 @@
 	@include tablet-large {
 		display: inline-block;
 		position: absolute;
-		//width: 16%;
 		left: 0;
 		top: 125px;
 	}
@@ -51,7 +63,6 @@
 	@include tablet-large {
 		display: inline-block;
 		position: absolute;
-		//width: 16%;
 		right: 0;
 		top: 125px;
 	}
@@ -118,7 +129,6 @@
 	@include tablet-large {
 		display: inline-block;
 		position: absolute;
-		//width: 16%;
 		right: -2%;
 		top: 445px;
 		transform: rotate(180deg);
@@ -131,7 +141,6 @@
 	@include tablet-large {
 		display: inline-block;
 		position: absolute;
-		//width: 16%;
 		left: -2%;
 		top: 445px;
 		transform: rotate(180deg);

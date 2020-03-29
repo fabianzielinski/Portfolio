@@ -48,7 +48,7 @@
 
             .contact_link {
                 color: $main-gray-lgh;
-                height: 100%;
+                height: auto;
                 //z-index: 2;
 
                 .contact_ico {
@@ -60,7 +60,7 @@
                 }
 
                 .contact_name {
-                    font-size: 18px;
+                    font-size: $sm-link-fsize;
 
                     &:hover {
                         color: $main-blue;

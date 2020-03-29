@@ -23,12 +23,28 @@
             padding: 1.5% 0 0 30%;
             width: 100%;
 
+            @include max-mobile-large {
+                justify-content: center;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 0;
+
+                .nav-item {
+                    padding-bottom: 3%;
+                    padding-top: 3%;
+                    max-width: 100%;
+                    font-size: $page-header-fsize;
+                    border-bottom: solid 2px $main-gray;
+                }
+            }
+
             .nav-item {
                 margin: 0 30px 0 30px;
 
                 &:hover {
                     padding: auto auto;
-                    background-color: $main-gray-lgh;
+                    border-bottom: solid 5px $main-blue;
                 }
 
                 .nav-link {

@@ -190,9 +190,12 @@ template { display: none; }
 
 .navigation .row .nav-bar { display: -ms-flexbox; display: flex; list-style-type: none; padding: 1.5% 0 0 30%; width: 100%; }
 
+@media (max-width: 576px) { .navigation .row .nav-bar { -ms-flex-pack: center; justify-content: center; display: block; width: 100%; text-align: center; padding: 0; }
+  .navigation .row .nav-bar .nav-item { padding-bottom: 3%; padding-top: 3%; max-width: 100%; font-size: 24px; border-bottom: solid 2px #545453; } }
+
 .navigation .row .nav-bar .nav-item { margin: 0 30px 0 30px; }
 
-.navigation .row .nav-bar .nav-item:hover { padding: auto auto; background-color: #e2e2d5; }
+.navigation .row .nav-bar .nav-item:hover { padding: auto auto; border-bottom: solid 5px #5CE1E6; }
 
 .navigation .row .nav-bar .nav-item .nav-link { color: #545453; font-weight: 800; text-decoration: none; }
 
@@ -325,7 +328,7 @@ header .welcome_photo { background-repeat: no-repeat; background-color: #fff; bo
 
 .contact .content_page .contact_row { padding-top: 50px; }
 
-.contact .content_page .contact_row .contact_link { color: #e2e2d5; height: 100%; }
+.contact .content_page .contact_row .contact_link { color: #e2e2d5; height: auto; }
 
 .contact .content_page .contact_row .contact_link .contact_ico { font-size: 50px; }
 

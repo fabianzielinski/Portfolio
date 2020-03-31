@@ -10,29 +10,31 @@
 </head>
 
 <body>
-    <nav class="navigation">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="logo">
-                    <img class="logo_photo" src="images/logo_gray.png" alt="logo">
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <ul class="nav-bar flex-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#me">About me</a>
-                    </li class="nav-item">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+    <nav class="main-header">
+        <div class="main-container">
+            <img class="main-header-logo" src="images/logo_gray.png"></img>
+            <nav class="main-header-menu dropdown-menu">
+                <ul>
+                    <li><a href="index.html" class="dropdown-menu-item">Home</a></li>
+                    <li><a href="#me" class="dropdown-menu-item">About</a></li>
+                    <li><a href="#portfolio" class="dropdown-menu-item">Portfolio</a></li>
+                    <li><a href="#contact" class="dropdown-menu-item">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
+            <nav class="main-header-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#me">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="main-header-dropdown-button" onclick="toggleDropdownMenu(1)">
+                <div class="stripes"></div>
+                <div class="stripes"></div>
+                <div class="stripes"></div>
+                <div class="stripes"></div>
+            </button>
         </div>
     </nav>
     <header class="container">
@@ -376,7 +378,7 @@
             </p>
         </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/main-header-menu.js"></script>
 </body>
 
 </html>

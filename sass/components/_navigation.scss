@@ -1,62 +1,140 @@
-.navigation {
-    width: 100%;
-    height: auto;
+:root {
+
+    /* MAIN HEADER */
+    --main-header-menu-width: 450px;
+    --main-header-menu-button-height: 40px;
+    --main-header-menu-button-width: 80px;
+}
+
+/* MAIN HEADER */
+.main-header {
     position: fixed;
-    top: 0;
-    background-color: $main-white;
-    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $main-white;
+    height: 70px;
+    font-family: $font-calibri;
+    box-shadow: 0 0 10px $main-black;
+    text-transform: uppercase;
+    transition: all 0.35s ease;
+    z-index: 3;
 
-    .row {
+    .main-container {
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1140px;
 
-        .logo {
+        .main-header-logo {
+            margin: 20px;
+            height: 70px;
+        }
 
-            .logo_photo {
-                @include size(200px, 70px);
+        .main-header-menu {
+            display: none;
+            font-weight: 100;
+            width: var(--main-header-menu-width);
+            margin: 20px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+                list-style-type: none;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $main-white;
+                color: $main-gray;
+                border: 1px solid $main-black;
+                width: var(--main-header-menu-button-width);
+                height: var(--main-header-menu-button-height);
+                border-radius: 5px;
+                margin: 5px;
+                transition: all 0.35s ease;
+                text-decoration: none;
+
+                &:hover {
+                    background: $main-gray;
+                    box-shadow: 0px 4px 10px $main-black;
+                }
             }
         }
 
-        .nav-bar {
+        .dropdown-menu {
             display: flex;
-            list-style-type: none;
-            padding: 1.5% 0 0 30%;
             width: 100%;
 
-            @include max-mobile-large {
-                justify-content: center;
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding: 0;
-
-                .nav-item {
-                    padding-bottom: 3%;
-                    padding-top: 3%;
-                    max-width: 100%;
-                    font-size: $page-header-fsize;
-                    border-bottom: solid 2px $main-gray;
-                }
+            ul {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                height: 0;
+                top: 70px;
+                left: 0;
+                background: $main-gray;
+                overflow: hidden;
+                transition: all 0.35s ease;
             }
 
-            .nav-item {
-                margin: 0 30px 0 30px;
+            a {
+                height: calc(var(--main-header-menu-button-height) * 1.8);
+                width: 100%;
+                margin: 0;
+                border: none;
+                border-radius: unset;
+                border-bottom: 1px solid $main-gray;
 
                 &:hover {
-                    padding: auto auto;
-                    border-bottom: solid 5px $main-blue;
+                    box-shadow: unset;
                 }
+            }
+        }
 
-                .nav-link {
-                    color: $main-gray;
-                    font-weight: $heavy-font;
-                    text-decoration: none;
+        .main-header-dropdown-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: var(--main-header-menu-button-height);
+            min-width: Var(--main-header-menu-button-height);
+            margin: 20px;
+            background: $main-white;
+            border: 1px solid $main-gray;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.35s ease;
 
-                    &:hover {
-                        cursor: pointer;
+            &:hover {
+                background: $main-gray-lgh;
+                box-shadow: 0px 4px 10px $main-black;
+            }
 
-                    }
-                }
+            .stripes {
+                background: $main-gray-lgh;
+                height: 2px;
+                min-width: 25px;
+                margin: 2px 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .main-header-menu {
+                display: flex;
+            }
+
+            .dropdown-menu {
+                display: none;
+            }
+
+            .main-header-dropdown-button {
+                display: none;
             }
         }
     }

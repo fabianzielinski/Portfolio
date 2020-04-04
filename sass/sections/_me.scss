@@ -1,5 +1,5 @@
 .me {
-    padding-top: 70px;
+    padding: 70px 0 0 0;
     background-color: $main-gray-lgh;
     max-width: 100%;
     height: auto;
@@ -9,6 +9,11 @@
             text-transform: uppercase;
             font-weight: $heavy-font;
             font-size: 22px;
+        }
+
+        p {
+            padding: 0 8%;
+            justify-content: stretch;
         }
     }
 

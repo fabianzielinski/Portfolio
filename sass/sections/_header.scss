@@ -1,9 +1,13 @@
 header {
     background-color: $main-gray;
     max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    //margin: 0 auto;
     height: auto;
     color: $main-green;
     padding: 10% 40%;
+    justify-content: center;
     @include section;
 
     .hex {
@@ -54,5 +58,13 @@ header {
         max-width: 100%;
         width: 18vw;
         height: auto;
+    }
+
+    @include max-mobile-large {
+        .welcome_photo {
+            width: 100%;
+            height: auto;
+            margin: 10%;
+        }
     }
 }

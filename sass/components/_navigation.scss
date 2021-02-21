@@ -9,9 +9,6 @@
 .main-header {
 	position: fixed;
 	width: 100%;
-	@media (max-width: 767px) {
-		width: 100vw;
-	}
 	display: flex;
 	justify-content: center;
 	background: $main-white;
@@ -27,6 +24,9 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		@media (max-width: 767px) {
+			width: 100vw;
+		}
 		max-width: 1140px;
 
 		.main-header-logo {
